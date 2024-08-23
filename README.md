@@ -9,5 +9,5 @@ docker build -t idomi27/json-server .
 ## Futtatás
 
 ```sh
-docker run -d --rm -p 8888:3000 -v $(pwd):/app -v /app/node_modules idomi27/json-server
+docker run -d --rm -p 8888:3000 -v "$(pwd):/app" -v /app/node_modules idomi27/json-server
 ```
