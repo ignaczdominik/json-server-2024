@@ -13,7 +13,7 @@ server.use(middlewares)
 server.use(jsonServer.bodyParser)
 server.use(forms.array())
 server.use(bodyParser.urlencoded({extended: true}))
-
+/*
 server.use((req, res, next) => {
     if (req.method === 'POST') {
         req.body.created_at = new Date().toISOString()
@@ -24,7 +24,7 @@ server.use((req, res, next) => {
     }
     next()
 })
-
+*/
 router.render = (req, res) => {
     res.jsonp({
         data: res.locals.data
